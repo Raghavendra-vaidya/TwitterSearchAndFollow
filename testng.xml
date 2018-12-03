@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Potus Follow test" parallel= "false">
+<listeners>
+	<listener class-name="com.twitter.utilities.TestListener"></listener>
+	<listener class-name="com.twitter.utilities.ReporterExtent"></listener>
+</listeners>
+
+  <test thread-count="5" name="chromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.twitter.tests.PotusTest"/>
+    </classes>
+  </test>
+   
+  <test thread-count="5" name="FFTest">
+	<parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.twitter.tests.PotusTest"/>
+    </classes>
+  </test>
+ 
+</suite> 
