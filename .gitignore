@@ -1,0 +1,9 @@
+#ignoring files with .exe extension
+*.exe
+
+#igonring unwanted folders
+test-output/
+target/
+.classpath
+.settings/
+.project
