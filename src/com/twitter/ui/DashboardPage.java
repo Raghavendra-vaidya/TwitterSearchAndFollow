@@ -33,6 +33,7 @@ public class DashboardPage
 	public void waitForVisibilityOfPotus(){
 		WebDriverWait wait = new WebDriverWait(driver, maxTime);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//a[contains(text(),'    President Trump')]")));
+		System.out.println("Element found");
 	}
 	
 	public WebElement getPOTUS()
