@@ -21,25 +21,25 @@ public class LoginPage
 	public void waitForPageToLoad()
 	{
 		WebDriverWait wait = new WebDriverWait(driver, maxTime);
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='StaticLoggedOutHomePage-cell StaticLoggedOutHomePage-utilityBlock']")));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(GetData.fromExcel("Identifiers", "loginpage", 0, 1))));
 	}
 	
 	public WebElement getLoginButton()
 	{
 		//todo xpathy.
-	return	driver.findElement(By.xpath("//div[@class='StaticLoggedOutHomePage-buttons']/a[contains(text(),'Log in')]"));
+	return	driver.findElement(By.xpath(GetData.fromExcel("Identifiers", "loginpage", 1, 1)));
 	}
 	
 	public WebElement getUserNameField(){
 		
-		return driver.findElement(By.xpath("//input[@type='text' and @placeholder='Phone, email or username']"));
+		return driver.findElement(By.xpath(GetData.fromExcel("Identifiers", "loginpage", 2, 1)));
 	}
 	
 	public WebElement getPwdField(){
-		return driver.findElement(By.xpath("//div[@class='clearfix field']/input[@name='session[password]']"));
+		return driver.findElement(By.xpath(GetData.fromExcel("Identifiers", "loginpage", 3, 1)));
 	}
 	public WebElement getLoginButton2(){
-		return driver.findElement(By.xpath("//div[@class='clearfix']/button[text()='Log in']"));
+		return driver.findElement(By.xpath(GetData.fromExcel("Identifiers", "loginpage", 5, 1)));
 		
 	}
 	

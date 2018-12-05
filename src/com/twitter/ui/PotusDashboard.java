@@ -21,31 +21,29 @@ public class PotusDashboard {
 	public void waitForPageToLoad()
 	{
 		WebDriverWait wait = new WebDriverWait(driver, maxTime);
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='ProfileNav']")));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(GetData.fromExcel("Identifiers", "potusdashboard", 0, 1))));
 	}
 	
 	public WebElement getFollowButton(){
-		return driver.findElement(By.xpath("(//span/button/span[text()='Follow'])[1]"));
+		return driver.findElement(By.xpath(GetData.fromExcel("Identifiers", "potusdashboard", 1, 1)));
 	}
 	public WebElement getFollowingButton(){
-		return driver.findElement(By.xpath("(//span/button/span[text()='Following'])[1]"));
+		return driver.findElement(By.xpath(GetData.fromExcel("Identifiers", "potusdashboard", 2, 1)));
 	}
 	
 	public WebElement getLogOutMenu()
 	{
-		return driver.findElement(By.xpath("//a[@id='user-dropdown-toggle']")); 
+		return driver.findElement(By.xpath(GetData.fromExcel("Identifiers", "potusdashboard", 3, 1))); 
 	}
 	public void waitForMenuToLoad()
 	{
 		WebDriverWait wait = new WebDriverWait(driver, maxTime);
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='js-first-tabstop']/..")));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(GetData.fromExcel("Identifiers", "potusdashboard", 5, 1))));
 	}
 	public WebElement getLogOut()
 	{
-		return driver.findElement(By.xpath("//button[text()='Log out']"));
+		return driver.findElement(By.xpath(GetData.fromExcel("Identifiers", "potusdashboard", 4, 1)));
 	}
 	
-	
-	
-	
+		
 }
