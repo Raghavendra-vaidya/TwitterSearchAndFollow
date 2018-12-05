@@ -22,12 +22,12 @@ public class DashboardPage
 	public void waitForPageToLoad()
 	{
 		WebDriverWait wait = new WebDriverWait(driver, maxTime);
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@id='timeline']")));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(GetData.fromExcel("Identifiers", "Dashboard", 1, 1))));
 	}
 	
 	public WebElement getSearchField()
 	{
-		return driver.findElement(By.xpath("//input[@name='q']"));
+		return driver.findElement(By.xpath(GetData.fromExcel("Identifiers", "Dashboard", 0, 1)));
 	}
 	
 	public void waitForVisibilityOfPotus(){
