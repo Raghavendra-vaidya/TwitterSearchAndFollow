@@ -11,5 +11,3 @@ Here are the instructions if u want to use this framework:
 And thats all! Do run as maven test.
 This code will login to twitter and search for POTUS and follow. After following, it will verify whether your profile is following POTUS or not. 
 After that it will unfollow and log out.
-
-This was asked as a Test automation task in one of the interviews.
