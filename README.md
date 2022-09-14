@@ -1,4 +1,6 @@
-HEY!! Thanks for having look at my Repo :)
+This code will login to twitter and search for POTUS and follow. After following, it will verify whether your profile is following POTUS or not. 
+After that it will unfollow and log out.
+
 Here are the instructions if u want to use this framework:
 
 1. Install Eclipse/ any editor
@@ -8,6 +10,6 @@ Here are the instructions if u want to use this framework:
 5. Under test-data folder there is a file data.xlsx. In that sheet put your login details.
 6. Build this project by Maven pom.xml
 
-And thats all! Do run as maven test.
-This code will login to twitter and search for POTUS and follow. After following, it will verify whether your profile is following POTUS or not. 
-After that it will unfollow and log out.
+And thats all! 
+from project root -> run: *`maven test`*
+
