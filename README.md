@@ -1,4 +1,4 @@
-This code will login to twitter and search for POTUS and follow. After following, it will verify whether your profile is following POTUS or not. 
+Automate login to twitter and search for POTUS and follow. After following, it will verify whether your profile is following POTUS or not. 
 After that it will unfollow and log out.
 
 Here are the instructions if u want to use this framework:
