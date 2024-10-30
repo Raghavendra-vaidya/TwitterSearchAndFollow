@@ -13,3 +13,4 @@ Here are the instructions if u want to use this framework:
 And thats all! 
 from project root -> run: *`maven test`*
 
+Note: This was done as a coding challenge
